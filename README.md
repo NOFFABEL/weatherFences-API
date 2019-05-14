@@ -24,10 +24,10 @@ Liste des outils :
 ### Creation d'un *Virtual Host*
 
 ***Un Virtual Host*** est un **DNS** (nom de domaine) sur le serveur local. ``WampServer version 3+`` offre un assistant de création de VirtualHost.  
-![Add a Virtual Host sous wampServer](./img/01.png)  
+![Add a Virtual Host sous wampServer](./img/01.PNG)  
 
 Le formulaire suivant s'affiche :  
-![formulaire VHost Wamp](./img/02.png)  
+![formulaire VHost Wamp](./img/02.PNG)  
 
 Une fois validé, ouvrez le fichier **`C:/wamp/bin/apache/apache2.4.17/conf/extra/httpd-vhosts.conf`**  
 
@@ -59,25 +59,25 @@ Puis dans le fichier **``C:\WINDOWS\system32\drivers\etc\hosts``**
 Pour demarrer l'API il faut exécuté la commande ``composer start`` à la racine du projet.
 Cette commande va lire la section **"scripts"** du fichier **composer.json** et exécuté la commande **"start"**.  
 Comment se présente mon fichier composer.json à la fin.  
-![fichier composer.json](./img/03.png)  
+![fichier composer.json](./img/03.PNG)  
 
 N.B: Assurez vous que la commande **"start"** soit correct. Si vous vous utiliser un numéro de **port** autre que le **80** dans les configurations VHost, qu'il soit le même ici.  
 
 #### Exécution d'une requête *POST*  
 
-![POST request](./img/04.png)
+![POST request](./img/04.PNG)
 
 #### Exécution d'une requète *GET*  
 
-![GET request](./img/06.png)
+![GET request](./img/06.PNG)
 
 #### Exécution Erronée *Mauvaise route*
 
-![Bad Route](./img/05.png)
+![Bad Route](./img/05.PNG)
 
 #### Les logs en console
 
-![Console Log](./img/07.png)
+![Console Log](./img/07.PNG)
 
 N.B: dans les requete j'utilise le **ServerName**. Le résultat serai le même avec l'adresse locale **127.0.0.1** ou **localhost**. Si le port n'est pas le **80** on ajouterai le numéro de port sur l'url tel que suit : **``[url]:<port>``** ex: **``localhost:8088``** se connectera à l'adresse locale sur le port 8088.
 
