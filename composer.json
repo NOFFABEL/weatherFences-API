@@ -1,6 +1,6 @@
 {
     "name": "WeatherFences",
-    "description": "A small weather restfull api that consume a OpenweatherMap api.",
+    "description": "A small restfull api build with Slim framework 3.",
     "keywords": ["weather", "rest", "api", "restfull"],
     "license": "MIT",
     "authors": [
@@ -29,7 +29,7 @@
         "process-timeout" : 0
     },
     "scripts": {
-        "start": "php -S localhost:8088 -t public",
+        "start": "php -S localhost:80 -t public",
         "test": "phpunit"
     }
 }
